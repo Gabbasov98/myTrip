@@ -29,13 +29,12 @@
                             <div class="manage__info-item manage__info-item--details manage__info-item--orange">
                                 <span class="manage__info-title">Your plan</span>
                                 <span class="manage__info-desc">Minimal</span>
-                                <a href="" class="manage__info-detail">
+                                <button class="manage__info-detail" data-bs-toggle="modal" data-bs-target="#tarifIngo">
                                     <span>Details</span>
                                     <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 4.64645L-3.09086e-08 8.29289L0.707107 9L5.06066 4.64645L0.707106 0.292892L-3.49691e-07 1L3.64645 4.64645Z" fill="black"/>
                                     </svg>
-
-                                </a>
+                                </button>
                             </div>
                         </div>
                         <div class="manage__group">
@@ -104,6 +103,8 @@
         </div>
 
     </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
     @@include('components/page-blocks/_scripts.html')
 </body>
 

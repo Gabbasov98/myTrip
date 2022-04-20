@@ -101,18 +101,24 @@
         margin-top: 16px;
         text-align: center;
     }
-    &__slider {
-        margin-top: 64px;
+    &__slider {}
+    .swiper-container {
+        overflow: unset;
+        padding-top: 64px;
     }
 }
 
 .step-card {
-    padding: 12px;
-    background: #FFFFFF;
-    box-shadow: 0px 11.1728px 22.3457px rgba(0, 0, 0, 0.04);
-    border-radius: 18px;
-    letter-spacing: 0.02em;
-    font-family: $font2;
+    // padding: 12px;
+    // background: #FFFFFF;
+    // box-shadow: 0px 11.1728px 22.3457px rgba(0, 0, 0, 0.04);
+    // border-radius: 18px;
+    // letter-spacing: 0.02em;
+    // font-family: $font2;
+    &>img {
+        width: 100%;
+        filter: drop-shadow(0px 4px 48px rgba(0, 0, 0, 0.1));
+    }
     &__inner {
         background: #F8F8F8;
         border-radius: 14px;
@@ -598,14 +604,14 @@
             width: 324px !important;
             padding-top: 62px;
             .step-card {
-                opacity: 0.4;
+                // opacity: 0.4;
             }
             &--current {
                 width: 362px !important;
                 padding: 0;
                 .step-card {
                     opacity: 1;
-                    padding: 14px;
+                    // padding: 14px;
                     &__inner {
                         padding: 18px 17px 21px;
                     }
@@ -669,6 +675,7 @@
             max-width: 100%;
             margin: 0 auto;
             overflow: hidden;
+            filter: drop-shadow(0 4px 48px rgba(0, 0, 0, .1));
         }
         &__slider {
             position: relative;
@@ -679,6 +686,11 @@
         .swiper-pagination {
             width: 100%;
             position: static;
+        }
+    }
+    .step-card {
+        &>img {
+            filter: unset;
         }
     }
     .index-analytics {
@@ -780,6 +792,7 @@
             margin-bottom: 64px;
         }
     }
+    .steps {}
 }
 
 @media screen and (max-width: 768px) {

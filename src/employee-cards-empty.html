@@ -13,7 +13,7 @@
                 <div class="employee-cards card-bg">
                     <div class="employee-cards__top">
                         <h1 class="employee-cards__title">My Cards</h1>
-                        <button class="employee-cards__add btn btn-orange-outline">
+                        <button class="employee-cards__add btn btn-orange-outline" data-bs-toggle="modal" data-bs-target="#addCard">
                             <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M11.8333 5.33333H7.16667V0.666667C7.16667 0.298667 6.868 0 6.5 0C6.132 0 5.83333 0.298667 5.83333 0.666667V5.33333H1.16667C0.798667 5.33333 0.5 5.632 0.5 6C0.5 6.368 0.798667 6.66667 1.16667 6.66667H5.83333V11.3333C5.83333 11.7013 6.132 12 6.5 12C6.868 12 7.16667 11.7013 7.16667 11.3333V6.66667H11.8333C12.2013 6.66667 12.5 6.368 12.5 6C12.5 5.632 12.2013 5.33333 11.8333 5.33333Z" fill="#FA6410"/>
                             </svg>
@@ -34,6 +34,8 @@
         </div>
 
     </div>
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
     @@include('components/page-blocks/_scripts.html')
 </body>
 

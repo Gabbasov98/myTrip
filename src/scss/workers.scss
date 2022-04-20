@@ -1,0 +1,207 @@
+.workers {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    &__bottom {
+        margin-top: auto;
+        padding-top: 24px;
+    }
+    &__btn {
+        margin: 0 auto;
+        width: 172px;
+        height: 54px;
+        border-radius: 100px;
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+.workers-table {
+    overflow-x: auto;
+    width: calc(100% + 48px);
+    margin: 16px 0 0 -24px;
+    padding: 0 24px;
+    position: relative;
+    table {
+        width: 100%;
+        min-width: 1090px;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            background: #F7F7F7;
+            height: 32px;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+    }
+    th {
+        height: 40px;
+        padding-bottom: 8px;
+        &:first-child {
+            .workers-table__sort {
+                justify-content: center;
+            }
+        }
+    }
+    td {
+        padding: 8px 0;
+    }
+    &__sort {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #8A8A8A;
+        position: relative;
+        z-index: 2;
+        &-btn {
+            margin-left: 6px;
+        }
+    }
+    &__user {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        border-radius: 24px 0 0 24px;
+        padding-left: 16px;
+        img {
+            width: 48px;
+            height: 48px;
+            display: block;
+            border-radius: 50%;
+            margin-right: 16px;
+        }
+    }
+    &__item {
+        background: #F7F7F7;
+        height: 73px;
+        display: flex;
+        align-items: center;
+    }
+    &__earned {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 120%;
+        color: #10BD6A;
+    }
+    &__date {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #B6B6B6;
+        border-radius: 0 24px 24px 0;
+    }
+}
+
+.pagination {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__btn {
+        &--prev {
+            margin-right: 21px;
+        }
+        &--next {
+            margin-left: 21px;
+        }
+    }
+    &__item {
+        height: 32px;
+        min-width: 32px;
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0 3px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 6px;
+        &:hover {
+            color: $primary;
+        }
+        &--active {
+            background: rgba(250, 100, 16, 0.1);
+            border-radius: 50%;
+            color: $primary;
+            pointer-events: none;
+        }
+    }
+    &__input {
+        margin-right: 6px;
+        width: 35px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+        font-size: 16px;
+        position: relative;
+        cursor: pointer;
+        &--active {
+            .pagination__input {
+                &-hidden {
+                    opacity: 1;
+                    pointer-events: unset;
+                }
+                &-show {
+                    pointer-events: none;
+                }
+            }
+        }
+        &-hidden {
+            position: absolute;
+            border-radius: 20px;
+            width: 58px;
+            height: 48px;
+            border: 5px solid $primary;
+            bottom: 100%;
+            left: 50%;
+            transform: translate(-50%, 1px);
+            background: #FFFFFF;
+            opacity: 0;
+            pointer-events: none;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 12px;
+                height: 8px;
+                background-image: url(../img/triangle.svg);
+                background-size: 100% 100%;
+                left: 50%;
+                top: 100%;
+                transform: translate(-50%, 3px);
+            }
+            input {
+                width: 100%;
+                height: 100%;
+                border: none;
+                background-color: transparent;
+                font-size: 16px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .pagination {
+        &__btn {
+            &--prev {
+                margin-right: 10px;
+            }
+            &--next {
+                margin-left: 10px;
+            }
+        }
+        &__item {
+            padding: 0 2px;
+            &--mob {
+                display: none;
+            }
+        }
+    }
+}

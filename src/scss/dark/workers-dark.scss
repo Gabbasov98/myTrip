@@ -1,0 +1,10 @@
+.workers-table {
+    table {
+        &::before {
+            background: #313131;
+        }
+    }
+    &__item {
+        background: #313131;
+    }
+}

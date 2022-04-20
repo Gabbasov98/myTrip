@@ -83,6 +83,32 @@
             }
         }
     }
+    &__errors {
+        display: flex;
+        margin-left: 60px;
+    }
+    &__error {
+        padding: 12px 32px;
+        background: #D20E0E;
+        border-radius: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #FFFFFF;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .employee-cards {
+        &__top {
+            flex-wrap: wrap;
+        }
+        &__errors {
+            margin: 20px 0 0;
+            width: 100%;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
