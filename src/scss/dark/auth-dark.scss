@@ -1,0 +1,61 @@
+.auth {
+    color: #fff;
+    &__wrap {
+        background: #1C1C1C;
+    }
+    &__logo-black {
+        fill: #fff;
+    }
+    &__back {
+        background: rgba(255, 255, 255, 0.15);
+        color: #FFFFFF;
+        &:hover {
+            background: rgba(255, 255, 255, 0.10);
+            color: #fff;
+        }
+    }
+    &__tabs {
+        background: #2F2F2F;
+    }
+    &__tab {
+        color: #8C8C8C;
+        path {
+            fill: #8C8C8C;
+        }
+        &:hover {
+            color: #fff;
+            path {
+                fill: #fff;
+            }
+        }
+        &--active {
+            background: #FFFFFF;
+            color: #000000;
+            path {
+                fill: #000;
+            }
+        }
+    }
+}
+
+.form-group {
+    input {
+        background: #2F2F2F;
+        color: #fff;
+    }
+    label {
+        color: #FFFFFF;
+        opacity: 0.6;
+    }
+}
+
+.check {
+    input:checked+label {
+        color: #fff;
+    }
+    label {
+        &::before {
+            background-image: url(../img/check-dark.svg);
+        }
+    }
+}

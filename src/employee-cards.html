@@ -1,0 +1,69 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Employee", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <!-- cabinet--dark -->
+    <div class="cabinet">
+
+        <div class="cabinet__wrap">
+            <aside class="cabinet-sidebar">
+                @@include('components/cabinet-page/_sidebar.html',{"active":"cards"})
+            </aside>
+            <button class="cabinet__btn"></button>
+            <main class="cabinet-content">
+                <div class="employee-cards card-bg">
+                    <div class="employee-cards__top">
+                        <h1 class="employee-cards__title">My Cards</h1>
+                        <button class="employee-cards__add btn btn-orange-outline">
+                            <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11.8333 5.33333H7.16667V0.666667C7.16667 0.298667 6.868 0 6.5 0C6.132 0 5.83333 0.298667 5.83333 0.666667V5.33333H1.16667C0.798667 5.33333 0.5 5.632 0.5 6C0.5 6.368 0.798667 6.66667 1.16667 6.66667H5.83333V11.3333C5.83333 11.7013 6.132 12 6.5 12C6.868 12 7.16667 11.7013 7.16667 11.3333V6.66667H11.8333C12.2013 6.66667 12.5 6.368 12.5 6C12.5 5.632 12.2013 5.33333 11.8333 5.33333Z" fill="#FA6410"/>
+                            </svg>
+                            <span>Add a card</span>
+                        </button>
+                    </div>
+                    <div class="employee-cards__items">
+                        <div class="employee-cards__item">
+                            <img src="img/card.svg" alt="">
+                            <div class="employee-cards__item-num">**4950</div>
+                            <button class="employee-cards__item-delete">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L9 3H3V5H4.10938L5.89258 20.2559V20.2637C6.0236 21.2503 6.88032 22 7.875 22H16.123C17.1177 22 17.9744 21.2503 18.1055 20.2637L18.1074 20.2559L19.8906 5H21V3H15L14 2H10ZM6.125 5H17.875L16.123 20H7.875L6.125 5Z" fill="#B9B9B9"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="employee-cards__item">
+                            <img src="img/card2.svg" alt="">
+                            <div class="employee-cards__item-num">**8821</div>
+                            <button class="employee-cards__item-delete">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L9 3H3V5H4.10938L5.89258 20.2559V20.2637C6.0236 21.2503 6.88032 22 7.875 22H16.123C17.1177 22 17.9744 21.2503 18.1055 20.2637L18.1074 20.2559L19.8906 5H21V3H15L14 2H10ZM6.125 5H17.875L16.123 20H7.875L6.125 5Z" fill="#B9B9B9"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="employee-cards__item">
+                            <img src="img/card3.svg" alt="">
+                            <div class="employee-cards__item-num">**0063</div>
+                            <button class="employee-cards__item-delete">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L9 3H3V5H4.10938L5.89258 20.2559V20.2637C6.0236 21.2503 6.88032 22 7.875 22H16.123C17.1177 22 17.9744 21.2503 18.1055 20.2637L18.1074 20.2559L19.8906 5H21V3H15L14 2H10ZM6.125 5H17.875L16.123 20H7.875L6.125 5Z" fill="#B9B9B9"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="employee-cards__item">
+                            <img src="img/card4.svg" alt="">
+                            <div class="employee-cards__item-num">**7768</div>
+                            <button class="employee-cards__item-delete">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M10 2L9 3H3V5H4.10938L5.89258 20.2559V20.2637C6.0236 21.2503 6.88032 22 7.875 22H16.123C17.1177 22 17.9744 21.2503 18.1055 20.2637L18.1074 20.2559L19.8906 5H21V3H15L14 2H10ZM6.125 5H17.875L16.123 20H7.875L6.125 5Z" fill="#B9B9B9"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

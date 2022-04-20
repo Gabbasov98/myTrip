@@ -1,0 +1,46 @@
+.employee {
+    &__chart {
+        &-title {
+            path {
+                fill: #fff;
+            }
+        }
+    }
+    &__stat {
+        border-color: #393939;
+    }
+}
+
+.filter {
+    &__periods {
+        background: #313131;
+    }
+    &__period {
+        color: #8A8A8A;
+        &--active {
+            color: #FFFFFF;
+        }
+    }
+}
+
+.date-picker {
+    background: #313131;
+}
+
+.employee-qr {
+    &__img {
+        path {
+            fill: #fff;
+        }
+    }
+    &__link {
+        background: #313131;
+        input {
+            color: #919191;
+        }
+    }
+    &__badge {
+        background: #313131;
+        color: #fff;
+    }
+}

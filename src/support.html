@@ -1,0 +1,77 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Employee", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <!-- cabinet--dark -->
+    <div class="cabinet">
+
+        <div class="cabinet__wrap">
+            <aside class="cabinet-sidebar">
+                @@include('components/cabinet-page/_sidebar.html',{"active":"support"})
+            </aside>
+            <button class="cabinet__btn"></button>
+            <main class="cabinet-content">
+                <div class="support card-bg">
+                    <div class="support__top">
+                        <h1 class="support__title">Support</h1>
+                    </div>
+                    <div class="support__contacts">
+                        <div class="support__contact">
+                            <span class="support__contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.65713 3C8.1337 3 7.61807 3.1875 7.18838 3.53125L7.12588 3.5625L7.09463 3.59375L3.96963 6.8125L4.00088 6.84375C3.03604 7.73438 2.73917 9.06641 3.15713 10.2188C3.16104 10.2266 3.15323 10.2422 3.15713 10.25C4.00479 12.6758 6.17276 17.3594 10.4071 21.5938C14.6571 25.8438 19.4032 27.9258 21.7509 28.8438H21.7821C22.997 29.25 24.3134 28.9609 25.2509 28.1562L28.4071 25C29.2353 24.1719 29.2353 22.7344 28.4071 21.9062L24.3446 17.8438L24.3134 17.7812C23.4853 16.9531 22.0165 16.9531 21.1884 17.7812L19.1884 19.7812C18.4657 19.4336 16.7431 18.543 15.0946 16.9688C13.4579 15.4062 12.622 13.6094 12.3134 12.9062L14.3134 10.9062C15.1532 10.0664 15.1689 8.66797 14.2821 7.84375L14.3134 7.8125L14.2196 7.71875L10.2196 3.59375L10.1884 3.5625L10.1259 3.53125C9.6962 3.1875 9.18057 3 8.65713 3ZM8.65713 5C8.73135 5 8.80557 5.03516 8.87588 5.09375L12.8759 9.1875L12.9696 9.28125C12.9618 9.27344 13.0282 9.37891 12.9071 9.5L10.4071 12L9.93838 12.4375L10.1571 13.0625C10.1571 13.0625 11.3056 16.1367 13.7196 18.4375L13.9384 18.625C16.2626 20.7461 19.0009 21.9062 19.0009 21.9062L19.6259 22.1875L22.5946 19.2188C22.7665 19.0469 22.7353 19.0469 22.9071 19.2188L27.0009 23.3125C27.1728 23.4844 27.1728 23.4219 27.0009 23.5938L23.9384 26.6562C23.4774 27.0508 22.9892 27.1328 22.4071 26.9375C20.1415 26.0469 15.7392 24.1133 11.8134 20.1875C7.85635 16.2305 5.78995 11.7422 5.03213 9.5625C4.87979 9.15625 4.98917 8.55469 5.34463 8.25L5.40713 8.1875L8.43838 5.09375C8.5087 5.03516 8.58292 5 8.65713 5Z" fill="#FA6410"/>
+                                </svg>
+                            </span>
+                            <div class="support__contact-info">
+                                <span class="support__contact-title">Phone</span>
+                                <a href="tel:+79264279733" class="support__contact-link">+7 926 427 97 33</a>
+                            </div>
+                        </div>
+                        <div class="support__contact">
+                            <span class="support__contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.33464 5.33325C3.8613 5.33325 2.66797 6.52659 2.66797 7.99992V23.9999C2.66797 25.4733 3.8613 26.6666 5.33464 26.6666H26.668C28.1413 26.6666 29.3346 25.4733 29.3346 23.9999V7.99992C29.3346 6.52659 28.1413 5.33325 26.668 5.33325H5.33464ZM5.33464 7.99992H26.668V9.33586L16.0013 15.9999L5.33464 9.33586V7.99992ZM5.33464 12.0025L16.0013 18.6666L26.668 12.0025V23.9999H5.33464V12.0025Z" fill="#FA6410"/>
+                                </svg>
+                            </span>
+                            <div class="support__contact-info">
+                                <span class="support__contact-title">Email</span>
+                                <a href="mailto:info@mytip.ae" class="support__contact-link">info@mytip.ae</a>
+                            </div>
+                        </div>
+                        <div class="support__contact">
+                            <span class="support__contact-icon">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M27.4297 4.01567C26.9865 3.96867 26.5048 4.03788 26.0208 4.22921C25.4208 4.46521 16.0192 8.42009 7.25521 12.1094L4.35938 13.3282C3.23804 13.7828 2.67188 14.5223 2.67188 15.5183C2.67188 16.2156 2.967 17.1615 4.375 17.7188L9.26302 19.6771C9.68569 20.9451 10.6674 23.8893 10.9141 24.6719C11.0607 25.1359 11.4312 26.3048 12.3672 26.5782C12.5592 26.6435 12.7595 26.6771 12.9635 26.6771C13.5542 26.6771 13.9795 26.4022 14.1875 26.2422L17.2943 23.6146L21.0677 27.1042C21.213 27.2522 21.9823 28 23.0156 28C24.305 28 25.283 26.9267 25.487 25.8881C25.5976 25.3187 29.237 7.04946 29.237 7.05213C29.5636 5.5868 28.9763 4.82665 28.599 4.50265C28.2756 4.22599 27.8729 4.06267 27.4297 4.01567ZM26.5469 6.89588C26.0442 9.41588 23.304 23.171 22.888 25.1537L17.3724 20.0521L13.6302 23.2214L14.6667 19.1667C14.6667 19.1667 21.8167 11.9292 22.2474 11.5079C22.5941 11.1705 22.6667 11.0523 22.6667 10.9349C22.6667 10.7789 22.5864 10.6667 22.401 10.6667C22.2344 10.6667 22.008 10.8264 21.888 10.9011C20.3636 11.8515 13.8721 15.5497 10.6771 17.3672L6.04167 15.5157L8.29167 14.5704C14.0237 12.157 24.2322 7.85855 26.5469 6.89588Z" fill="#FA6410"/>
+                                </svg>
+                            </span>
+                            <div class="support__contact-info">
+                                <span class="support__contact-title">Telegram</span>
+                                <a href="" class="support__contact-link" target="_blank">hello_Mytip</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="support__qa">
+                        <div class="qa__item">
+                            @@include('components/page-blocks/_qa.html',{"question":"Aut blanditiis molestiae qui alias quas nemo?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/page-blocks/_qa.html',{"question":"Second question here?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/page-blocks/_qa.html',{"question":"Nulla libero est Quis praesentium ut facilis ipsa?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/page-blocks/_qa.html',{"question":"At aperiam omnis ea quos quidem quo beatae?"})
+                        </div>
+                        <div class="qa__item">
+                            @@include('components/page-blocks/_qa.html',{"question":"Aut eveniet dolor id modi necessitatibus?"})
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

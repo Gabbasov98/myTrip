@@ -1,0 +1,132 @@
+<!DOCTYPE html> <html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Sign In
+        </a>
+        <a href="password-recovery.html" style="display: block; margin-bottom: 20px;">
+            Password recovery
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Sign Up
+        </a>
+        <a href="employee-dashboard.html" style="display: block; margin-bottom: 20px;">
+            Dashboard
+        </a>
+        <a href="employee-manage.html" style="display: block; margin-bottom: 20px;">
+            Manage account
+        </a>
+        <a href="employee-transactions.html" style="display: block; margin-bottom: 20px;">
+            Transactions
+        </a>
+        <a href="employee-cards.html" style="display: block; margin-bottom: 20px;">
+            My cards
+        </a>
+        <a href="employee-cards-empty.html" style="display: block; margin-bottom: 20px;">
+            My cards(empty)
+        </a>
+
+        <strong>Модалки</strong>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#changeMigrant">
+            Редактировать данные
+        </button>
+
+
+
+
+    </div>
+
+    <div class="modal fade" id="addPatent" aria-labelledby="addPatentLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal__top">
+            <div class="modal__title">Добавить патент</div>
+            <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.41401 6.00001L11.707 1.70701C12.098 1.31601 12.098 0.684006 11.707 0.293006C11.316 -0.0979941 10.684 -0.0979941 10.293 0.293006L6.00001 4.58601L1.70701 0.293006C1.31601 -0.0979941 0.684006 -0.0979941 0.293006 0.293006C-0.0979941 0.684006 -0.0979941 1.31601 0.293006 1.70701L4.58601 6.00001L0.293006 10.293C-0.0979941 10.684 -0.0979941 11.316 0.293006 11.707C0.488006 11.902 0.744006 12 1.00001 12C1.25601 12 1.51201 11.902 1.70701 11.707L6.00001 7.41401L10.293 11.707C10.488 11.902 10.744 12 11 12C11.256 12 11.512 11.902 11.707 11.707C12.098 11.316 12.098 10.684 11.707 10.293L7.41401 6.00001Z" fill="#85949E"/>
+                </svg>
+            </button>
+        </div>
+        <div class="modal__content">
+
+            <div class="modal__form">
+                <fieldset class='form-group form-group--error'>
+                    <label>Серия и номер</label>
+                    <input type='text' />
+                    <span class="form-group__error">Обязательное поле</span>
+                </fieldset>
+                <fieldset class='form-group'>
+                    <label>Дата выдачи</label>
+                    <div class="date-input">
+                        <input type='text' class="" />
+                    </div>
+                </fieldset>
+                <fieldset class='form-group'>
+                    <label>Дата окончания</label>
+                    <div class="date-input">
+                        <input type='text' class="" />
+                    </div>
+                </fieldset>
+                <fieldset class='form-group modal__form-group--full'>
+                    <label>Кем выдан</label>
+                    <input type='text' />
+                </fieldset>
+            </div>
+
+        </div>
+
+        <div class="modal__bottom">
+            <div class="migrant-doc__file file-input">
+                <input type="file" name="" id="file1">
+                <label for="file1">Загрузить фото/скан</label>
+            </div>
+            <button class="modal__btn btn btn-blue">Сохранить</button>
+        </div>
+    </div>
+</div>
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

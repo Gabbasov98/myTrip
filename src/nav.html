@@ -1,0 +1,74 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Главная", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper strong {
+        font-size: 30px;
+        display: block;
+        margin-top: 80px;
+        margin-bottom: 30px;
+    }
+    
+    strong:first-child {
+        margin-top: 0;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 400px;
+        height: 65px;
+        font-size: 20px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <strong>Страницы</strong>
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="login.html" style="display: block; margin-bottom: 20px;">
+            Sign In
+        </a>
+        <a href="password-recovery.html" style="display: block; margin-bottom: 20px;">
+            Password recovery
+        </a>
+        <a href="reg.html" style="display: block; margin-bottom: 20px;">
+            Sign Up
+        </a>
+        <a href="employee-dashboard.html" style="display: block; margin-bottom: 20px;">
+            Dashboard
+        </a>
+        <a href="employee-manage.html" style="display: block; margin-bottom: 20px;">
+            Manage account
+        </a>
+        <a href="employee-transactions.html" style="display: block; margin-bottom: 20px;">
+            Transactions
+        </a>
+        <a href="employee-cards.html" style="display: block; margin-bottom: 20px;">
+            My cards
+        </a>
+        <a href="employee-cards-empty.html" style="display: block; margin-bottom: 20px;">
+            My cards(empty)
+        </a>
+
+        <strong>Модалки</strong>
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#changeMigrant">
+            Редактировать данные
+        </button>
+
+
+
+
+    </div>
+
+    @@include('components/page-blocks/_popups.html')
+    <!--  -->
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+.cabinet-sidebar {
+    background: #252525;
+    &__link--active {
+        background: #313131;
+    }
+}
+
+.cabinet {
+    &__btn {
+        background-image: url(../img/burger.svg);
+        &--active {
+            background-image: url(../img/burger2.svg);
+        }
+    }
+}
+
+.manage {
+    &__info {
+        &-item {
+            background: #2F2F2F;
+            &--orange {
+                .manage__info {
+                    &-title {
+                        color: #000000;
+                        opacity: 0.4;
+                    }
+                    &-desc {
+                        color: #000000;
+                    }
+                    &-detail {
+                        color: #000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.transactions,
+.employee-cards {
+    &__top {
+        border-color: #393939;
+    }
+    &__item {
+        background: #313131;
+        &-status {
+            background: #404040;
+        }
+    }
+}

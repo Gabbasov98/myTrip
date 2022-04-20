@@ -1,0 +1,64 @@
+@import "vars";
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.display1 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 110%;
+}
+
+.display2 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 130%;
+}
+
+.subtitle {
+    font-size: 18px;
+    line-height: 140%;
+}
+
+.orange-text {
+    color: $primary;
+}
+
+ul {
+    li {
+        position: relative;
+        padding-left: 26px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 110%;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 1;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .display1 {
+        font-size: 32px;
+        line-height: 120%;
+    }
+    .display2 {
+        font-size: 32px;
+    }
+}

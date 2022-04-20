@@ -1,0 +1,108 @@
+@import "vars";
+.header {
+    padding: 20px 0;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 3;
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(40px);
+        border-radius: 1000px;
+        padding: 0 24px;
+        min-height: 77px;
+    }
+    &__logo {
+        display: block;
+        width: 106px;
+        flex-shrink: 0;
+        img {
+            width: 100%;
+        }
+    }
+    &__right {
+        display: flex;
+        align-items: center;
+    }
+    &__btn {}
+    &__burger {
+        display: none;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    &__item {
+        font-size: 18px;
+        line-height: 140%;
+        color: #FFFFFF;
+        text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+        margin-right: 32px;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 20px 0;
+        &__inner {
+            min-height: unset;
+            background: transparent;
+            padding: 0;
+            backdrop-filter: unset;
+        }
+        &__logo {
+            width: 77px;
+            position: relative;
+            z-index: 20;
+        }
+        &__right {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            background: #000000;
+            height: 100vh;
+            width: 100%;
+            padding: 80px 20px;
+            justify-content: center;
+            flex-direction: column;
+            transition: all .225s;
+            &--active {
+                left: 0;
+            }
+        }
+        &__burger {
+            width: 20px;
+            height: 20px;
+            background-image: url(../img/burger.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+            transition: all .225s;
+            position: relative;
+            z-index: 20;
+            &--active {
+                background-image: url(../img/burger2.svg);
+            }
+        }
+    }
+    .nav {
+        display: block;
+        text-align: center;
+        &__item {
+            display: block;
+            margin: 0 0 32px;
+        }
+    }
+}

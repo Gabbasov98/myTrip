@@ -1,0 +1,110 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Employee", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+<body>
+    <!-- cabinet--dark -->
+    <div class="cabinet">
+
+        <div class="cabinet__wrap">
+            <aside class="cabinet-sidebar">
+                @@include('components/cabinet-page/_sidebar.html',{"active":"manage"})
+            </aside>
+            <button class="cabinet__btn"></button>
+            <main class="cabinet-content">
+                <div class="manage">
+                    <div class="manage__left card-bg">
+                        <div class="manage__avatar">
+                            <div class="manage__avatar-upload">
+                                <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11.3633 4.9248C7.65123 4.9248 4.61328 7.96275 4.61328 11.6748V27.8748C4.61328 31.5869 7.65123 34.6248 11.3633 34.6248H27.5633C31.2753 34.6248 34.3133 31.5869 34.3133 27.8748V11.6748C34.3133 7.96275 31.2753 4.9248 27.5633 4.9248H11.3633ZM11.3633 7.6248H27.5633C29.8164 7.6248 31.6133 9.42166 31.6133 11.6748V27.8748C31.6133 28.5022 31.4622 29.0874 31.2125 29.615L21.9594 20.3637C21.2755 19.6798 20.3697 19.3371 19.4633 19.3371C18.5568 19.3371 17.6493 19.6798 16.9654 20.3637L7.71406 29.615C7.46437 29.0874 7.31328 28.5022 7.31328 27.8748V11.6748C7.31328 9.42166 9.11013 7.6248 11.3633 7.6248ZM36.1133 10.7871V28.7748C36.1133 32.9931 32.6816 36.4248 28.4633 36.4248H10.4756C11.7086 38.061 13.661 39.1248 15.8633 39.1248H28.4633C34.1702 39.1248 38.8133 34.4817 38.8133 28.7748V16.1748C38.8133 13.9734 37.7495 12.0201 36.1133 10.7871ZM24.8633 12.1248C24.2665 12.1248 23.6943 12.3619 23.2723 12.7838C22.8503 13.2058 22.6133 13.7781 22.6133 14.3748C22.6133 14.9715 22.8503 15.5438 23.2723 15.9658C23.6943 16.3878 24.2665 16.6248 24.8633 16.6248C25.46 16.6248 26.0323 16.3878 26.4543 15.9658C26.8762 15.5438 27.1133 14.9715 27.1133 14.3748C27.1133 13.7781 26.8762 13.2058 26.4543 12.7838C26.0323 12.3619 25.46 12.1248 24.8633 12.1248ZM19.4633 22.0213C19.6735 22.0213 19.8828 22.1051 20.0504 22.2727L29.3035 31.524C28.7758 31.7737 28.1907 31.9248 27.5633 31.9248H11.3633C10.7359 31.9248 10.1507 31.7737 9.62305 31.524L18.8744 22.2727C19.042 22.1051 19.2531 22.0213 19.4633 22.0213Z" fill="#8A8A8A"/>
+                                </svg>
+                                <span>Upload <br> Profile Pic</span>
+                                <input type="file">
+                            </div>
+                        </div>
+                        <div class="manage__info">
+                            <div class="manage__info-item">
+                                <span class="manage__info-title">Your ID</span>
+                                <span class="manage__info-desc">27</span>
+                            </div>
+                            <div class="manage__info-item manage__info-item--details manage__info-item--orange">
+                                <span class="manage__info-title">Your plan</span>
+                                <span class="manage__info-desc">Minimal</span>
+                                <a href="" class="manage__info-detail">
+                                    <span>Details</span>
+                                    <svg width="6" height="9" viewBox="0 0 6 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.64645 4.64645L-3.09086e-08 8.29289L0.707107 9L5.06066 4.64645L0.707106 0.292892L-3.49691e-07 1L3.64645 4.64645Z" fill="black"/>
+                                    </svg>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="manage__group">
+                            <div class="manage__group-title">Your Info</div>
+                            <fieldset class='form-group'>
+                                <input type='text' />
+                                <label>Name</label>
+                            </fieldset>
+                            <fieldset class='form-group'>
+                                <input type='text' />
+                                <label>Phone</label>
+                            </fieldset>
+                            <fieldset class='form-group'>
+                                <input type='text' />
+                                <label>Email</label>
+                            </fieldset>
+                            <fieldset class='form-group'>
+                                <input type='text' />
+                                <label>Telegram</label>
+                            </fieldset>
+                        </div>
+                        <div class="manage__group">
+                            <div class="manage__group-title">Change Password</div>
+                            <fieldset class='form-group'>
+                                <input type='password' />
+                                <label>Current password</label>
+                            </fieldset>
+                            <fieldset class='form-group'>
+                                <input type='password' />
+                                <label>New password</label>
+                            </fieldset>
+                        </div>
+                        <button class="manage__btn btn btn-orange">Save changes</button>
+                    </div>
+                    <div class="manage__right card-bg">
+                        <div class="manage-organization">
+                            <div class="manage-organization__title">My Organizations</div>
+                            <div class="manage-organization__items">
+                                <div class="manage-organization__item">
+                                    <div class="manage-organization__item-left">
+                                        <span class="manage-organization__item-title">Johnsons&Baby</span>
+                                        <span class="manage-organization__item-desc">Since 9 Jan 2022</span>
+                                    </div>
+                                    <button class="manage-organization__item-btn">Leave</button>
+                                </div>
+                                <div class="manage-organization__item">
+                                    <div class="manage-organization__item-left">
+                                        <span class="manage-organization__item-title">Huggies</span>
+                                        <span class="manage-organization__item-desc">Since 19 Feb 2022</span>
+                                    </div>
+                                    <button class="manage-organization__item-btn">Leave</button>
+                                </div>
+                                <div class="manage-organization__item">
+                                    <div class="manage-organization__item-left">
+                                        <span class="manage-organization__item-title">PepsiCo</span>
+                                        <span class="manage-organization__item-desc">Since 24 Mar 2022</span>
+                                    </div>
+                                    <button class="manage-organization__item-btn">Leave</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="manage__btn btn btn-orange">Join Organization</button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

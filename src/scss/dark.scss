@@ -1,0 +1,10 @@
+.cabinet--dark {
+    background: #000000;
+    @import "dark/auth-dark";
+    @import "dark/cabinet-dark";
+    &~ {
+        @import "dark/datepicker-dark";
+    }
+    @import "dark/ui-dark";
+    @import "dark/employee-dark";
+}

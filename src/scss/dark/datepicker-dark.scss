@@ -1,0 +1,27 @@
+.daterangepicker {
+    background: #313131;
+    th {
+        &.month {
+            color: #FFFFFF;
+        }
+    }
+    .prev {
+        span {
+            background-image: url(../../img/prev-white.svg);
+        }
+    }
+    .next {
+        span {
+            background-image: url(../../img/next-white.svg);
+        }
+    }
+    td {
+        color: #fff !important;
+        &::after {
+            background: #634A3B;
+        }
+        &.in-range {
+            background: #634A3B;
+        }
+    }
+}
