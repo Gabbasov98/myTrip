@@ -78,7 +78,8 @@
         font-size: 18px;
         line-height: 140%;
         color: #5A5A5A;
-        margin-top: 16px;
+        // margin-top: 16px;
+        margin-bottom: 16px;
         &:hover {
             color: #fff;
         }
@@ -163,6 +164,7 @@
         }
         &__social {
             justify-content: center;
+            margin: 16px 0 0;
         }
         &__pay {
             width: 100%;
